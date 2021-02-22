@@ -1,0 +1,5 @@
+RwriteEngine on
+RwriteCond %{SCRIPT_FILENAME} !-f
+RwriteCond %{SCRIPT_FILENAME} !-d
+RwriteCond %{SCRIPT_FILENAME} !-l
+RwriteRule ^(.*)$ index.php/$1
